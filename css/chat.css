@@ -1,13 +1,24 @@
-.chats-body {
-  margin: 0;
+.header-wrapper {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  padding: 5px 0px;
+  background-color: white;
+  box-shadow: 0 18px 36px -18px rgba(255, 255, 255, 0.548),
+    0 -12px 36px -8px rgba(255, 255, 255, 0.493);
 }
 
+.chats-body {
+  margin: 10px 0;
+  padding-top: 90px;
+}
 .chats-body .header,
 .chats-body .status-bar {
   padding: 0px 20px;
 }
 
-.chat-screen {
+.chats-body {
   background-image: url("../images/chat_background.png");
   min-height: 100vh;
 }
@@ -49,7 +60,7 @@
 }
 
 .chat-screen .chat__messages {
-  border-top: 1px solid #f7f7f7;
+  /* border-top: 1px solid #f7f7f7; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,8 +104,9 @@
 
 .message .message__bubble {
   background-color: white;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 30px 60px -12px rgba(248, 248, 250, 0.418),
+    0 18px 36px -18px rgba(255, 255, 255, 0.589),
+    0 -12px 36px -8px rgba(255, 254, 254, 0.432);
   padding: 10px 20px;
   border-radius: 20px;
   display: block;
