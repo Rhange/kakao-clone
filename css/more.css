@@ -15,6 +15,10 @@
   cursor: pointer;
 }
 
+.more__btn-list .more__btn {
+  margin-right: 63px;
+}
+
 .more__btn .more__btn-title {
   font-size: 12px;
   margin-top: 15px;
@@ -26,13 +30,15 @@
 }
 
 .more .more__title {
-  opacity: 0.8;
-  margin-bottom: 20px;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
 
 .suggestion .suggestion__title {
   font-size: 12px;
   margin-top: 15px;
+  opacity: 0.5;
+  font-weight: 600;
 }
 
 .suggestion .suggestion__icon {
@@ -46,6 +52,6 @@
 }
 
 .suggestion__icon i {
-  font-size: 28px;
+  font-size: 24px;
   color: white;
 }

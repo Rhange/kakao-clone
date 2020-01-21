@@ -25,6 +25,10 @@
   align-items: center;
 }
 
+.more .friend__column {
+  margin-right: 10px;
+}
+
 .friend .friend__avatar {
   margin-right: 15px;
 }
@@ -83,6 +87,12 @@
   cursor: pointer;
 }
 
+.friends__friend .friend__more,
+.friends__friend .friend__now-listening,
+.friends__friend .friend__comment {
+  cursor: pointer;
+}
+
 .chats li {
   margin-bottom: 25px;
 }
@@ -110,7 +120,7 @@
   }
 }
 
-.chats .nav__badge {
+.chats__chat .nav__badge {
   font-size: 10px;
   color: white;
   background-color: #dc5d46;
@@ -125,25 +135,50 @@
   animation: spin 1s linear infinite 1.5s;
 }
 
+.chats__chat:nth-child(2) .nav__badge {
+  display: none;
+}
+
 .friend__column:nth-child(2) {
   display: flex;
   flex-direction: column;
 }
 
-.friend__avatar-2box {
+.friend__avatar-2box.friend__avatar {
   width: 60px;
   height: 60px;
+  margin: 0;
+  margin-right: 15px;
   position: relative;
 }
 
-.friend__avatar.m2-avatar {
+.friend__avatar .m2-avatar {
   position: absolute;
+  margin: 0;
   width: 40px;
   height: 40px;
   border: 3px solid white;
 }
 
-.friend__avatar.m2-avatar:nth-child(2) {
-  right: -25px;
-  top: 20px;
+.friend__avatar .m2-avatar:nth-child(2) {
+  right: 0px;
+  top: 17px;
+}
+
+.friend__avatar-4box.friend__avatar {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0;
+}
+
+.friend__avatar .m4-avatar {
+  margin: 0;
+  width: 27px;
+  height: 27px;
 }
