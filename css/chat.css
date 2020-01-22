@@ -11,8 +11,9 @@
 
 .chats-body {
   margin: 10px 0;
-  padding-top: 90px;
+  padding-top: 110px;
 }
+
 .chats-body .header,
 .chats-body .status-bar {
   padding: 0px 20px;
@@ -104,7 +105,7 @@
 }
 
 .chat-screen .chat__messages {
-  /* border-top: 1px solid #f7f7f7; */
+  /* border-top: 1px solid gray; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,12 +150,12 @@
 }
 
 .incoming-message img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
   margin-right: 15px;
   box-shadow: 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
-  animation: spin 1s linear infinite;
+  animation: spin 1s linear 2s;
 }
 
 .message .message__bubble {
@@ -168,14 +169,14 @@
 }
 
 .incoming-message .message__author {
-  margin-top: 10px;
   display: block;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .incoming-message .message__bubble {
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
   background-image: linear-gradient(to right, #f0c27b, #4b1248);
 }
 
@@ -196,7 +197,7 @@
 }
 
 .incoming-message {
-  animation: incomingAnim 0.5s ease-out forwards;
+  animation: incomingAnim 1s ease-out forwards;
 }
 
 @keyframes sentAnimation {
@@ -211,11 +212,19 @@
 }
 
 .sent-message {
-  animation: sentAnimation 0.5s ease-out forwards;
+  animation: sentAnimation 1s ease-out forwards;
 }
 
-.chat__messages .message__timestamp {
+.sent-message .message__timestamp,
+.incoming-message .message__timestamp {
   margin: 0px 5px;
-  margin-top: 20px;
   font-size: 11px;
+}
+
+.sent-message .message__timestamp {
+  margin-top: 24px;
+}
+
+.incoming-message .message__timestamp {
+  margin-top: 48px;
 }
