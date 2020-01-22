@@ -135,7 +135,8 @@
   animation: spin 1s linear infinite 1.5s;
 }
 
-.friend__column .nav__badge-first {
+.friend__column .nav__badge-first,
+.friend__column .nav__badge-third {
   opacity: 0;
 }
 
