@@ -10,10 +10,14 @@
   font-weight: 600;
 }
 
+.header-chat.header__title,
+.header-chat.header__title-num {
+  font-size: 16px;
+}
+
 .header .header__title-num {
   margin-left: 10px;
   opacity: 0.5;
-  font-size: 22px;
 }
 
 .header .header__icon {
