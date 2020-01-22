@@ -22,7 +22,7 @@
 
 .chats-body {
   background-image: url("../images/chat_background1.png");
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .chat__write--container {
@@ -49,16 +49,19 @@
 
 @keyframes float {
   0% {
-    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.952),
-      0 18px 36px -18px rgba(0, 0, 0, 1), 0 -12px 36px -8px rgba(0, 0, 0, 1);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   }
   50% {
-    box-shadow: 0 30px 60px -48px rgba(0, 0, 0, 0.952),
-      0 18px 36px -18px rgba(0, 0, 0, 1), 0 -12px 36px -8px rgba(0, 0, 0, 1);
+    box-shadow: 0 30px 60px -36px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   }
   100% {
-    box-shadow: 0 30px 60px -96px rgba(0, 0, 0, 0.952),
-      0 18px 36px -18px rgba(0, 0, 0, 1), 0 -12px 36px -8px rgba(0, 0, 0, 1);
+    box-shadow: 0 30px 60px -72px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   }
 }
 
@@ -78,11 +81,11 @@
 .chat__write:focus {
   outline: none;
   width: 80%;
-  transform: translateY(-100px);
+  transform: translateY(-50px);
   border-radius: 40px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  animation: float 3s ease-in-out infinite forwards;
+  animation: float 2s ease-in-out infinite forwards;
 }
 
 .chat__icon {
@@ -108,27 +111,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 10px;
   padding-top: 30px;
 }
 
 .chat__messages .chat__timestamp {
   background-color: white;
-  font-size: 12px;
-  padding: 5px 10px;
+  font-size: 10px;
+  opacity: 0.6;
+  padding: 5px 20px;
   border-radius: 10px;
   margin-bottom: 30px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px, 13px, 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
-    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -4px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -4px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .message {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
+}
+
+.message .message__content {
+  width: 80%;
 }
 
 .incoming-message {
@@ -159,12 +165,12 @@
 }
 
 .message .message__bubble {
-  background-color: white;
-  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
-    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  padding: 10px 20px;
-  border-radius: 15px;
   display: block;
+  /* box-shadow didn't work... */
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0 18px 36px -18px, rgba(0, 0, 0, 0.025) 0 -12px 36px -8px;
+  padding: 10px 15px;
+  border-radius: 10px;
   color: white;
   font-weight: 600;
 }
@@ -172,8 +178,8 @@
 .incoming-message .message__author {
   display: block;
   font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .incoming-message .message__bubble {
@@ -223,9 +229,9 @@
 }
 
 .sent-message .message__timestamp {
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .incoming-message .message__timestamp {
-  margin-top: 46px;
+  margin-top: 40px;
 }
