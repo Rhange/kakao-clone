@@ -84,7 +84,6 @@
 .friends__plus .friend__more {
   font-weight: 600;
   opacity: 0.3;
-  cursor: pointer;
 }
 
 .friends__friend .friend__more,
@@ -97,7 +96,8 @@
   margin-bottom: 25px;
 }
 
-.friends li {
+.friends li,
+.find li {
   margin-bottom: 15px;
 }
 
