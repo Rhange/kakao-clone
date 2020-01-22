@@ -97,7 +97,7 @@
 }
 
 .friends li,
-.find li {
+.find .find__friend {
   margin-bottom: 15px;
 }
 
