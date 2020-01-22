@@ -87,6 +87,10 @@
 
 .chat__icon {
   font-size: 18px;
+  color: black;
+  opacity: 0.4;
+  cursor: pointer;
+  margin-left: 10px;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -94,12 +98,8 @@
   opacity: 0;
 }
 
-.chat__write i {
-  font-size: 22px;
-}
-
-.chat__write-column:nth-child(2) {
-  width: 80%;
+.chat__write-icon i {
+  margin-right: 15px;
 }
 
 .chat-screen .chat__messages {
