@@ -1,4 +1,4 @@
-[![author](https://img.shields.io/badge/author-Rhange-34495e.svg?style=flat-square)](https://rhange.tistory.com)
+[![author](https://img.shields.io/badge/author-Rhange-f39c12.svg?style=flat-square)](https://rhange.tistory.com)
 [![time tracker](https://wakatime.com/badge/github/Rhange/kakao-clone.svg)](https://wakatime.com/badge/github/Rhange/kakao-clone)
 [![Build Status](https://travis-ci.com/Rhange/kakao-clone.svg?branch=master)](https://travis-ci.com/Rhange/kakao-clone)
 
