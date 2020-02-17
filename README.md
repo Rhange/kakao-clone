@@ -1,4 +1,6 @@
 [![time tracker](https://wakatime.com/badge/github/Rhange/kakao-clone.svg)](https://wakatime.com/badge/github/Rhange/kakao-clone)
+[![Build Status](https://travis-ci.com/Rhange/kakao-clone.svg?branch=master)](https://travis-ci.com/Rhange/kakao-clone)
+
 
 # kakao-clone
 
