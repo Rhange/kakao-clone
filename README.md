@@ -6,4 +6,4 @@ Cloning Kakao Desktop App
 
 This cloning project was done with NomadCoders Academy
 
-[NomadCoders](https://academy.nomadcoders.co/p/kakaoclone_total)
+[NomadCoders_Kokoatalk](https://academy.nomadcoders.co/p/kakaoclone_total)
