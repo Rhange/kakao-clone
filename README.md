@@ -14,4 +14,4 @@ This cloning project was progressed with NomadCoders Academy
 
 # My Project result
 
-[Kokoa Clone](https://rhange.github.io/kakao-clone/)
+[Rhange_Kokoa Clone](https://rhange.github.io/kakao-clone/)
