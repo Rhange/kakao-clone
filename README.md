@@ -10,3 +10,8 @@ Cloning Kakao Desktop App
 This cloning project was progressed with NomadCoders Academy
 
 [NomadCoders_Kokoatalk](https://academy.nomadcoders.co/p/kakaoclone_total)
+
+
+# My Project result
+
+[Kokoa Clone](https://rhange.github.io/kakao-clone/)
